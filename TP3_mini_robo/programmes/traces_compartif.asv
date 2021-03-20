@@ -1,0 +1,46 @@
+
+clc; clear all, close all;
+n=8
+pid1='p100i50d1000';
+pid2='p100i50d1000';
+pid3='p100i50d1000';
+pid4='p100i50d1000';
+pid5='p100i50d1000';
+pid6='p100i50d1000';
+pid7='p100i50d1000';
+pid8='p100i50d1000';
+
+
+%lm_p10i05d10=lm; rm_p10i05d10=rm; time_p10i05d10=time;
+com10='plot(';
+com20='legend('
+for ii=1:n
+    com=sprintf('pid=pid%d',n); eval(com);
+    com=sprintf('load data_%s;',pid); eval(com);
+    
+  if ii<n
+    com1=sprintf('time_%s, lm_%s,',pid, pid);
+    com2=sprinf('
+  else
+      com1=sprintf('time_%s, lm_%s);',pid, pid);
+  end
+      com10=strcat(com10,com1);
+end
+
+
+load '
+load data_p100i50d1000
+load data_p1000i0d0
+load data_p1000i50d1000
+%save data_p10i05d10 lm_p10i05d10 rm_p10i05d10 time_p10i05d10;
+
+success=kh4SetSpeed(0,0);
+%graphes
+close all
+time=time_p1000i50d1000;
+
+plot(time_p100i50d0,lm_p100i50d0,'r',time_p100i50d1000,lm_p100i50d1000,'b',time_p1000i0d0,lm_p1000i0d0,'g',time_p1000i50d1000,lm_p1000i50d1000,'c');
+legend('Position motor P=100/100 i=50/100 D=0/100','Position motor P=100/100 i=50/100 D=1000/100','Position motor P=10000/100 i=0/100 D=0/100','Position motor P=10000/100 i=50/100 D=1000/100')
+xlabel('Time (s)')
+ylabel('Encoders (pulses)')
+title('Position de la roue gauche')

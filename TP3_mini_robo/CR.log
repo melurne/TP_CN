@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  4 MAY 2021 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  4 MAY 2021 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -169,42 +169,75 @@ LaTeX Warning: Command \markboth  has changed.
 LaTeX Warning: Command \markright  has changed.
                Check if current package is valid.
 
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count191
+\calc@Bcount=\count192
+\calc@Adimen=\dimen148
+\calc@Bdimen=\dimen149
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count193
+\calc@Cskip=\skip55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count194
+\l_MT_multwidth_dim=\dimen150
+\origjot=\skip56
+\l_MT_shortvdotswithinadjustabove_dim=\dimen151
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen152
+\l_MT_above_intertext_sep=\dimen153
+\l_MT_below_intertext_sep=\dimen154
+\l_MT_above_shortintertext_sep=\dimen155
+\l_MT_below_shortintertext_sep=\dimen156
 )
 \idxtitle@default=\toks22
 \tf@default=\write3
 \openout3 = `CR.idx'.
 
-Package index Info: Writing index file CR.idx on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+Package index Info: Writing index file CR.idx on input line 10.
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count191
+\l__kernel_color_stack_int=\count195
 \l__pdf_internal_box=\box47
 )
 (./CR.aux)
 \openout1 = `CR.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Info: Redefining \microtypecontext on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Info: Redefining \microtypecontext on input line 12.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 11.
+LaTeX Info: Redefining \showhyphens on input line 12.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -214,16 +247,16 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count192
-\scratchdimen=\dimen148
+\scratchcounter=\count196
+\scratchdimen=\dimen157
 \scratchbox=\box48
-\nofMPsegments=\count193
-\nofMParguments=\count194
+\nofMPsegments=\count197
+\nofMParguments=\count198
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count195
-\MPscratchDim=\dimen149
-\MPnumerator=\count196
-\makeMPintoPDFobject=\count197
+\MPscratchCnt=\count266
+\MPscratchDim=\dimen158
+\MPnumerator=\count267
+\makeMPintoPDFobject=\count268
 \everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -241,92 +274,117 @@ e
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<imgs/fig1.jpg, id=10, 1438.37375pt x 854.19125pt>
-File: imgs/fig1.jpg Graphic file (type jpg)
-<use imgs/fig1.jpg>
-Package pdftex.def Info: imgs/fig1.jpg  used on input line 37.
-(pdftex.def)             Requested size: 256.0748pt x 152.06642pt.
-<imgs/fig2.png, id=11, 1036.87375pt x 675.52374pt>
-File: imgs/fig2.png Graphic file (type png)
-<use imgs/fig2.png>
-Package pdftex.def Info: imgs/fig2.png  used on input line 45.
-(pdftex.def)             Requested size: 256.0748pt x 166.8293pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2 <./imgs/fig1.jpg>]
-<imgs/fig3.png, id=15, 1465.475pt x 881.2925pt>
-File: imgs/fig3.png Graphic file (type png)
-<use imgs/fig3.png>
-Package pdftex.def Info: imgs/fig3.png  used on input line 52.
-(pdftex.def)             Requested size: 256.0748pt x 153.98643pt.
-<imgs/fig4.png, id=16, 1471.4975pt x 915.42pt>
-File: imgs/fig4.png Graphic file (type png)
-<use imgs/fig4.png>
-Package pdftex.def Info: imgs/fig4.png  used on input line 60.
-(pdftex.def)             Requested size: 256.0748pt x 159.30693pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3 <./imgs/fig2.png (PNG copy)> <./imgs/fig3.png (PNG copy)>]
-<imgs/fig5.jpg, id=20, 1927.2pt x 943.525pt>
-File: imgs/fig5.jpg Graphic file (type jpg)
-<use imgs/fig5.jpg>
-Package pdftex.def Info: imgs/fig5.jpg  used on input line 67.
-(pdftex.def)             Requested size: 312.9803pt x 153.2274pt.
-<imgs/fig6.png, id=21, 1449.415pt x 943.525pt>
-File: imgs/fig6.png Graphic file (type png)
-<use imgs/fig6.png>
-Package pdftex.def Info: imgs/fig6.png  used on input line 80.
-(pdftex.def)             Requested size: 256.0748pt x 166.68861pt.
- [4 <./imgs/fig4.png (PNG copy)> <./imgs/fig5.jpg>]
-<imgs/fig7.png, id=25, 1483.5425pt x 899.36pt>
-File: imgs/fig7.png Graphic file (type png)
-<use imgs/fig7.png>
-Package pdftex.def Info: imgs/fig7.png  used on input line 88.
-(pdftex.def)             Requested size: 256.0748pt x 155.23582pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
  []
 
-<imgs/fig8.jpg, id=26, 1927.2pt x 943.525pt>
+[2]
+<Khepera.png, id=18, 706.43925pt x 191.5155pt>
+File: Khepera.png Graphic file (type png)
+<use Khepera.png>
+Package pdftex.def Info: Khepera.png  used on input line 116.
+(pdftex.def)             Requested size: 369.88582pt x 100.27536pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 116--117
+ [][] 
+ []
+
+<imgs/fig1.jpg, id=20, 1438.37375pt x 854.19125pt>
+File: imgs/fig1.jpg Graphic file (type jpg)
+<use imgs/fig1.jpg>
+Package pdftex.def Info: imgs/fig1.jpg  used on input line 131.
+(pdftex.def)             Requested size: 256.0748pt x 152.06642pt.
+[3 <./Khepera.png> <./imgs/fig1.jpg>]
+<imgs/fig2.png, id=25, 1036.87375pt x 675.52374pt>
+File: imgs/fig2.png Graphic file (type png)
+<use imgs/fig2.png>
+Package pdftex.def Info: imgs/fig2.png  used on input line 139.
+(pdftex.def)             Requested size: 256.0748pt x 166.8293pt.
+<imgs/fig3.png, id=26, 1465.475pt x 881.2925pt>
+File: imgs/fig3.png Graphic file (type png)
+<use imgs/fig3.png>
+Package pdftex.def Info: imgs/fig3.png  used on input line 146.
+(pdftex.def)             Requested size: 256.0748pt x 153.98643pt.
+ [4 <./imgs/fig2.png (PNG copy)> <./imgs/fig3.png (PNG copy)>]
+<imgs/fig4.png, id=30, 1471.4975pt x 915.42pt>
+File: imgs/fig4.png Graphic file (type png)
+<use imgs/fig4.png>
+Package pdftex.def Info: imgs/fig4.png  used on input line 154.
+(pdftex.def)             Requested size: 256.0748pt x 159.30693pt.
+<imgs/fig5.jpg, id=31, 1927.2pt x 943.525pt>
+File: imgs/fig5.jpg Graphic file (type jpg)
+<use imgs/fig5.jpg>
+Package pdftex.def Info: imgs/fig5.jpg  used on input line 161.
+(pdftex.def)             Requested size: 312.9803pt x 153.2274pt.
+<imgs/fig6.png, id=32, 1449.415pt x 943.525pt>
+File: imgs/fig6.png Graphic file (type png)
+<use imgs/fig6.png>
+Package pdftex.def Info: imgs/fig6.png  used on input line 174.
+(pdftex.def)             Requested size: 256.0748pt x 166.68861pt.
+ [5 <./imgs/fig4.png (PNG copy)> <./imgs/fig5.jpg>]
+<imgs/fig7.png, id=36, 1483.5425pt x 899.36pt>
+File: imgs/fig7.png Graphic file (type png)
+<use imgs/fig7.png>
+Package pdftex.def Info: imgs/fig7.png  used on input line 182.
+(pdftex.def)             Requested size: 256.0748pt x 155.23582pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+<imgs/fig8.jpg, id=37, 1927.2pt x 943.525pt>
 File: imgs/fig8.jpg Graphic file (type jpg)
 <use imgs/fig8.jpg>
-Package pdftex.def Info: imgs/fig8.jpg  used on input line 95.
+Package pdftex.def Info: imgs/fig8.jpg  used on input line 189.
 (pdftex.def)             Requested size: 312.9803pt x 153.2274pt.
-[5 <./imgs/fig6.png (PNG copy)> <./imgs/fig7.png (PNG copy)>]
-<imgs/fig9.jpg, id=30, 1927.2pt x 943.525pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/fig9.jpg, id=38, 1927.2pt x 943.525pt>
 File: imgs/fig9.jpg Graphic file (type jpg)
 <use imgs/fig9.jpg>
-Package pdftex.def Info: imgs/fig9.jpg  used on input line 102.
+Package pdftex.def Info: imgs/fig9.jpg  used on input line 196.
 (pdftex.def)             Requested size: 312.9803pt x 153.2274pt.
- [6 <./imgs/fig8.jpg> <./imgs/fig9.jpg>]
-<imgs/fig10.jpg, id=34, 1927.2pt x 943.525pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./imgs/fig6.png (PNG copy)>]
+<imgs/fig10.jpg, id=42, 1927.2pt x 943.525pt>
 File: imgs/fig10.jpg Graphic file (type jpg)
 <use imgs/fig10.jpg>
-Package pdftex.def Info: imgs/fig10.jpg  used on input line 110.
+Package pdftex.def Info: imgs/fig10.jpg  used on input line 204.
 (pdftex.def)             Requested size: 312.9803pt x 153.2274pt.
- [7 <./imgs/fig10.jpg>] (./CR.aux) ) 
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./imgs/fig7.png (PNG copy)> <./imgs/fig8.jpg>] [8 <./imgs/fig9.jpg> <./imgs
+/fig10.jpg>] (./CR.aux) ) 
 Here is how much of TeX's memory you used:
- 4125 strings out of 483183
- 62009 string characters out of 5966292
- 342647 words of memory out of 5000000
- 19056 multiletter control sequences out of 15000+600000
- 539041 words of font info for 69 fonts, out of 8000000 for 9000
+ 4688 strings out of 483183
+ 71907 string characters out of 5966292
+ 362178 words of memory out of 5000000
+ 19603 multiletter control sequences out of 15000+600000
+ 539143 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 33i,7n,42p,569b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb>
-Output written on CR.pdf (7 pages, 1166421 bytes).
+ 33i,10n,42p,569b,232s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on CR.pdf (8 pages, 1232813 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 10291 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 10296 words of extra memory for PDF output out of 12000 (max. 10000000)
 

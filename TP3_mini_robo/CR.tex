@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{index}
+\usepackage{mathtools}
 
 \makeindex
 
@@ -24,6 +25,99 @@
 	Pour ce faire, nous communiquerons avec ce robot via une liaison série en utilisant Matlab.
 	
 	\section{Etude préliminaire}
+	Nous allons utiliser le système d'équation de mouvement décrit dans le sujet :
+	$$
+	\begin{cases}
+		F_{x1} + F_{x2} = m.\ddot{x}\\
+		(F_{x1} - F_{x2}).\dfrac{d}{2} = I_{z}.\ddot{\alpha}\\
+		U_{1} = J_{1}.\ddot{\theta}_{1} + f_{1}.\ddot{\theta}_{1} + F_{x1}.R\\
+		U_{2} = J_{2}.\ddot{\theta}_{2} + f_{2}.\ddot{\theta}_{2} + F_{x2}.R\\
+	\end{cases}
+	$$
+	On utilise ce système d'équations pour déterminer les égalités matricielles suivantes :
+	\begin{equation}
+	\begin{bmatrix}
+	\ddot{x} \\
+	\ddot{\alpha} \\
+	\ddot{\theta}_{1} \\
+	\ddot{\theta}_{2} \\
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	0 & 0 & 0 & 0 \\
+	0 & 0 & 0 & 0 \\
+	0 & 0 & -\dfrac{f}{J} & 0 \\
+	0 & 0 & 0 & -\dfrac{f}{J} \\
+	\end{bmatrix}
+	\begin{bmatrix}
+	\dot{x} \\
+	\dot{\alpha} \\
+	\dot{\theta}_{1} \\
+	\dot{\theta}_{2}
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+	\dfrac{1}{m} & \dfrac{1}{m} & 0 & 0 \\
+	\dfrac{d}{2.I} & -\dfrac{d}{2.I} & 0 & 0 \\
+	-\dfrac{R}{J} & 0 & \dfrac{1}{J} & 0 \\
+	0 & \dfrac{R}{J} & 0 & \dfrac{1}{J} \\
+	\end{bmatrix}
+	\begin{bmatrix}
+	F_{1} \\
+	F_{2} \\
+	U_{1} \\
+	U_{2} \\
+	\end{bmatrix}
+	\end{equation}
+	On note également l'égalité :
+	\begin{equation}
+	\begin{bmatrix}
+	\dot{\theta}_{1} \\
+	\dot{\theta}_{2} \\
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	0 & 0 & 1 & 0 \\
+	0 & 0 & 0 & 1 \\
+	\end{bmatrix}
+	\begin{bmatrix}
+	\dot{x} \\
+	\dot{\alpha} \\
+	\dot{\theta}_{1} \\
+	\dot{\theta}_{2}
+	\end{bmatrix}
+	+ 
+	\begin{bmatrix}
+	0 & 0 & 0 & 0 \\
+	0 & 0 & 0 & 0 \\
+	\end{bmatrix}
+	\begin{bmatrix}
+	F_{1} \\
+	F_{2} \\
+	U_{1} \\
+	U_{2} \\
+	\end{bmatrix}
+	\end{equation}
+	Ces deux équations matricielles nous permettent d'utiliser le bloc "state space" de simulink pour obtenir les valeurs de $\dot{\theta}_{1}$ et $\dot{\theta}_{2}$. \\
+	
+	Nous utilisons ensuite le systèm d'équation suivant pour déterminer les vitesses du robot à partir de $\dot{\theta}_{1}$ et $\dot{\theta}_{2}$.
+	$$
+	\begin{cases}
+	\dot{u} = \dfrac{\dot{\theta}_{1}+\dot{\theta}_{2}}{2}.R;\\
+	\dot{\alpha} = \dfrac{\dot{\theta}_{1}-\dot{\theta}_{2}}{d}.R;\\
+	\dot{v} = \dfrac{\dot{\theta}_{1}-\dot{\theta}_{2}}{d}.R.r_{1}\\
+	\end{cases}
+	$$
+	\newpage
+	Nous projetons ensuite dans le repère global affin d'obtenir la position du robot.
+	On obtient alors le schéma bloc suivant :
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width = 13cm]{Khepera.png}
+		\caption{Schéma bloc du robot}
+	\end{figure}
+	\\
+	On notera que les caractèristiques $\dot{\theta}_{1}$ et $\dot{\theta}_{2}$ sont commandées par deux régulateur PID (on les supposera identiques) qui sont ceux que l'on va étudier dans la partie qui suit.
 	
 	\section{Etude experimentale}
 	\subsection{PID pour la commande en position}
